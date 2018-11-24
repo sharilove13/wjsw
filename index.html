@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html ng-app="app">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no,minimal-ui">
+		<meta name="format-detection" content="telephone=no">
+		<link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" href="css/readerMain.css">
+		<style type="text/css">
+			
+		</style>
+	</head>
+	<body class="j-body-bk">
+		<div id="root" class="container">
+			<!-- 中间遮罩层——唤出工具菜单栏 -->
+			<div class="m-artical-action">
+				<div class="artical-action-mid" id="action_mid"></div>
+			</div>
+			<!-- 顶部导航 -->
+			<div id="top_nav" class="top-nav" style="display:none;">
+				<div class="icon-back"></div>
+				<div class="back-title">返回书架</div>
+			</div>
+			<!-- 章节标题 -->
+			<div id="fiction_chapter_title"> </div>
+			<!-- 章节内容 -->
+			<div id="fiction_continer" class="m-read-content">
+				
+			</div>
+			<!-- 章节翻页等按钮 -->
+			<div class="m-button-bar">
+				<ul class="u-tab">
+					<li id="prev_btn">上一章</li>
+					<li id="next_btn">下一章</li>
+				</ul>
+			</div>
+			<div class="nav-pannel-bk j-font-container" style="display:none"></div>
+			<!-- 背景字体操作面板 -->
+			<div class="bottom-pannel j-font-container" id="font_container" style="display:none">
+				<div class="child-mod">
+					<span>字号</span>
+					<button id="zoomin_font" class="font-size-btn">大</button>
+					<button id="zoomout_font" class="font-size-btn">小</button>
+				</div>
+				<div class="child-mod" id="bk_btn">
+					<span>背景</span>
+					<div class="bk-container j-bk1-container">
+						<div class=""></div>
+					</div>
+					<div class="bk-container j-bk2-container">
+						<div class="bk-container-current"></div>
+					</div>
+					<div class="bk-container j-bk3-container">
+						<div class=""></div>
+					</div>
+					<div class="bk-container j-bk4-container">
+						<div class=""></div>
+					</div>
+					<div class="bk-container j-bk5-container">
+						<div class=""></div>
+					</div>
+				</div>
+			</div>
+			<!-- 工具栏遮罩 -->
+			<div class="bottom-tools-bk j-bottom-tools" style="display:none"></div>
+			<!-- 底部工具栏 -->
+			<div id="bottom_tools" class="bottom-tools j-bottom-tools" style="display:none">
+				<div>
+					<div class="tools-icon icon-dir"></div>
+					<div class="tools-title">目录</div>
+				</div>
+				<div id="font_btn">
+					<div class="tools-icon icon-font"></div>
+					<div class="tools-title">字体</div>
+				</div>
+				<div class="item" id="night_btn">
+					<div class="item-wrap" id="day_icon" style="display:none">
+							<div class="tools-icon icon-day"></div>
+							<div class="tools-title">白天</div>
+						</div>
+					<div class="item-wrap" id="night_icon">
+						<div class="tools-icon icon-night"></div>
+						<div class="tools-title">夜间</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script src="lib/zepto.min.js"></script>
+		<script>
+			window.jQuery = $;
+		</script>
+		<script src="js/jquery.base64.js"></script>
+		<script src="js/jquery.jsonp.js"></script>
+		<script src="js/readerMainProm.js"></script>
+	</body>
+</html>

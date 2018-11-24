@@ -1,0 +1,227 @@
+html{
+    width: 100%;
+    height:100%;
+    /* 恢复滚动，即y轴内容超出不会隐藏 */
+    overflow-x: hidden;
+}
+body{
+    text-align: left;
+    width: 100%;
+    overflow: hidden;
+    background: #e9dfc7;
+}
+/* 顶部导航 */
+.top-nav{
+    position: fixed;
+    top: 0;
+    height: 50px;
+    width: 100%;
+    z-index:9999;
+    background: #000;
+}
+.icon-back{
+    position: absolute;
+    top:14px;
+    left:10px;
+    width: 23px;
+    height: 23px;
+    background: url("../img/back.png");
+    background-size: contain;
+}
+.back-title{
+    position: absolute;
+    top:16px;
+    left:42px;
+    color:#d5d5d6;
+}
+/* 主体 */
+.m-read-content{
+    font-size: 14px;
+    color:#555;
+    line-height: 31px;
+    padding:15px;
+}
+/* 主体标题 */
+.m-read-content h4{
+    font-size: 20px;
+    color:#736357;
+    border-bottom: solid 1px #736357;
+    letter-spacing: 2px;
+    margin-bottom: 0 0 1em 0;
+}
+/* 主体内容 */
+.m-read-content p{
+    /* 缩进 */
+    text-indent:2em;
+    margin:0.5em 0;
+    letter-spacing: 0px;
+    line-height: 24px;
+}
+/* 翻页按钮行 */
+.m-button-bar{
+    width: 70%;
+    max-width: 880px;
+    margin:0 auto;
+    padding:5px;
+}
+.u-tab{
+    height: 34px;
+    margin:10px auto;
+    /* 为了文字上下居中 */
+    line-height: 34px;
+    border-radius: 8px;
+    border:1px solid #858382;
+    font-size:12px;
+    background: #000;
+    opacity: .9;
+}
+.u-tab li{
+    display: inline-block;
+    width: 49%;
+    text-align: center;
+    border-right: 1px solid #858382;
+}
+.u-tab li:nth-child(2){
+    border-right: none;
+}
+/* 底部工具栏 */
+.bottom-tools-bk{
+    position:fixed;
+    bottom:0;
+    height: 70px;
+    width: 100%;
+    background: #000;
+    opacity: .9;
+    z-index: 9998;
+}
+.bottom-tools{
+    position: fixed;
+    display: flex;
+    justify-content: space-around;
+    height:70px;
+    width: 100%;
+    bottom: 0;
+    background: #000;
+    z-index:9999;
+}
+.bottom-tools .tools-icon{
+    position: absolute;
+    top:15px;
+    width: 25px;
+    height: 25px;
+}
+.bottom-tools .tools-title{
+    position: absolute;
+    top:45px;
+    color:#d5d5d6;
+}
+/* 工具栏图标 */
+.bottom-tools .icon-dir{
+    background: url("../img/dir.png") no-repeat;
+    background-size: contain;
+}
+.bottom-tools .icon-font{
+    background: url("../img/font.png") no-repeat;
+    background-size: contain;
+}
+.bottom-tools .current .icon-font{
+    background: url("../img/font-current.png") no-repeat;
+    background-size: contain;
+}
+.bottom-tools .icon-night{
+    background: url("../img/night.png") no-repeat;
+    background-size: contain;
+}
+.bottom-tools .icon-day{
+    background: url("../img/day.png") no-repeat;
+    background-size: contain;
+}
+/* 底部字体面板 */
+.nav-pannel-bk{
+    position:fixed;
+    bottom:70px;
+    height: 135px;
+    width: 100%;
+    background: #000;
+    opacity: .9;
+    z-index: 10000;
+}
+.bottom-pannel{
+    position:fixed;
+    bottom:70px;
+    height: 135px;
+    width: 100%;
+    background: none;
+    color:#fff;
+    z-index: 10001;
+}
+.child-mod{
+    padding:5px 10px;
+    margin:15px;
+}
+.child-mod span{
+    display: inline-block;
+    padding-right: 20px;
+    padding-left: 10px;
+}
+/* 字号 */
+.font-size-btn{
+    background: none;
+    border:1px solid #8c8c8c;
+    color:#fff;
+    border-radius: 16px;
+    padding:5px 40px;
+}
+.font-size-btn:nth-child(2){
+    margin-right:10px;
+}
+.bk-container{
+    position:relative;
+    width:30px;
+    height:30px;
+    border-radius:15px;
+    display: inline-block;
+    vertical-align: -10px;
+    margin-left: 10px;
+}
+.child-mod>.bk-container:nth-child(2){
+    background-color:#F5EFE4;
+    color:#555;
+}
+.child-mod>.bk-container:nth-child(3){
+    background-color:#e9dfc7;
+    color:#555;
+}
+
+.child-mod>.bk-container:nth-child(4){
+    background-color:#A4A4A4;
+    color:#333;
+}
+.child-mod>.bk-container:nth-child(5){
+    background-color:#CDEFCE;
+    color:#333;
+}
+.child-mod>.bk-container:nth-child(6){
+    background-color:#283548;
+    color:#fff;
+} 
+.child-mod .bk-container-current{
+    position: absolute;
+    width:32px;
+    height: 32px;
+    border-radius: 16px;
+    border:1px solid #ff7800;
+    display: inline-block;
+    top:-2px;
+    left:-2px;
+}
+/* 背景 */
+
+/* 中间遮罩触碰层 */
+.artical-action-mid{
+    position: fixed;
+    z-index: 10002;
+    width: 100%;
+    height: 40%;
+    top:30%;
+}
